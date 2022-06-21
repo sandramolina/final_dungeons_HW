@@ -43,8 +43,9 @@ public class WarriorTest {
 
     @Test
     public void getHealed() {
-        warrior.getHealed();
-        assertEquals(155, warrior.getHp());
+        Cleric cleric1 = new Cleric(35, "Pauline", HealingTools.RUE);
+        warrior.getHealedByCleric(cleric1);
+        assertEquals(153, warrior.getHp());
     }
 
     @Test

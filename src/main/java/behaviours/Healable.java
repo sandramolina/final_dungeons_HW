@@ -1,5 +1,7 @@
 package behaviours;
 
+import players.Cleric;
+
 public interface Healable {
-    void getHealed();
+    void getHealedByCleric(Cleric cleric);
 }

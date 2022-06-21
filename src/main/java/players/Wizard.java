@@ -33,7 +33,7 @@ public class Wizard extends Player implements Healable {
     }
 
     @Override
-    public void getHealed() {
-        setHp(getHp() + 2);
+    public void getHealedByCleric(Cleric cleric) {
+        setHp(getHp() + cleric.getHealingTool().getPower());
     }
 }

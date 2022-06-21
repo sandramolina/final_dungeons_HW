@@ -49,14 +49,17 @@ public class ClericTest {
     }
 
     @Test
-    public void canGetHealed(){
-        cleric.getHealed();
-        assertEquals(56, cleric.getHp());
+    public void canGetHealedByCleric(){
+        Cleric cleric1 = new Cleric(35, "Pauline", HealingTools.RUE);
+        cleric.getHealedBy(cleric1);
+        assertEquals(58, cleric.getHp());
     }
 
-    @Test
-    public void canHeal(){
-        assertEquals("You are healed!", cleric.heal());
-    }
+//    @Test
+//    public void canHeal(){
+//        Cleric cleric1 = new Cleric(35, "Pauline", HealingTools.RUE);
+//        cleric.heal(cleric1);
+//        assertEquals(40, cleric1.getHp());
+//    }
 
 }

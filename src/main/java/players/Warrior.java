@@ -20,8 +20,8 @@ public class Warrior extends Player implements Healable, IFight {
     }
 
     @Override
-    public void getHealed() {
-        setHp(getHp() + 5);
+    public void getHealedByCleric(Cleric cleric) {
+        setHp(getHp() + cleric.getHealingTool().getPower());
     }
 
     @Override

@@ -21,4 +21,8 @@ public abstract class Player {
         this.hp = hp;
     }
 
+    public void getHealedBy(Cleric cleric){
+        setHp(getHp() + cleric.getHealingTool().getPower());
+    }
+
 }

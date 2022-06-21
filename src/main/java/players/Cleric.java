@@ -18,12 +18,12 @@ public class Cleric extends Player implements Healable {
         return healingTool;
     }
 
-    @Override
-    public void getHealed() {
-        setHp(getHp() + 1);
-    }
+//    public void heal(Healable playerToBeHealed){
+//        playerToBeHealed.getHealedByCleric(cleric);
+//    }
 
-    public String heal(){
-        return "You are healed!";
+    @Override
+    public void getHealedByCleric(Cleric cleric) {
+        setHp(getHp() + cleric.getHealingTool().getPower());
     }
 }

@@ -59,8 +59,9 @@ public class WizardTest {
 
     @Test
     public void canGetHealed() {
-        wizard.getHealed();
-        assertEquals(82, wizard.getHp());
+        Cleric cleric1 = new Cleric(35, "Pauline", HealingTools.RUE);
+        wizard.getHealedByCleric(cleric1);
+        assertEquals(83, wizard.getHp());
     }
 
     @Test
