@@ -2,15 +2,15 @@ package players;
 
 public abstract class Player {
    private int hp;
-    private String playerName;
+    private String characterName;
 
-    public Player(int hp, String playerName) {
+    public Player(int hp, String characterName) {
         this.hp = hp;
-        this.playerName = playerName;
+        this.characterName = characterName;
     }
 
-    public String getPlayerName() {
-        return playerName;
+    public String getCharacterName() {
+        return characterName;
     }
 
     public int getHp() {
@@ -20,4 +20,5 @@ public abstract class Player {
     public void setHp(int hp) {
         this.hp = hp;
     }
+
 }

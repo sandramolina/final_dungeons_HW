@@ -16,7 +16,7 @@ public class WarriorTest {
 
     @Test
     public void getPlayerName() {
-        assertEquals("Xiao", warrior.getPlayerName());
+        assertEquals("Xiao", warrior.getCharacterName());
     }
 
     @Test

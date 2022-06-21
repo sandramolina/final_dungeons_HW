@@ -6,8 +6,8 @@ import behaviours.IFight;
 public class Warrior extends Player implements Healable, IFight {
     private WeaponType weapon;
 
-    public Warrior(int hp, String playerName, WeaponType weapon) {
-        super(hp, playerName);
+    public Warrior(int hp, String characterName, WeaponType weapon) {
+        super(hp, characterName);
         this.weapon = weapon;
     }
 
