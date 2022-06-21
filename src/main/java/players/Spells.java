@@ -13,4 +13,12 @@ public enum Spells {
         this.effect = effect;
         this.effectImpact = effectImpact;
     }
+
+    public String getEffect() {
+        return effect;
+    }
+
+    public int getEffectImpact() {
+        return effectImpact;
+    }
 }

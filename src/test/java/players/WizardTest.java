@@ -58,7 +58,7 @@ public class WizardTest {
     }
 
     @Test
-    public void getHealed() {
+    public void canGetHealed() {
         wizard.getHealed();
         assertEquals(82, wizard.getHp());
     }
@@ -67,4 +67,10 @@ public class WizardTest {
     public void getsDefendedByGF(){
         assertEquals("I will defend thee", wizard.getgF().gFDefends());
     }
+
+    @Test
+    public void spellGotEffect(){ assertEquals("Necrotic", wizard.getSpell().getEffect());}
+
+    @Test
+    public void spellGotImpact(){assertEquals(15, wizard.getSpell().getEffectImpact());}
 }
